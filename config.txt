@@ -1,0 +1,2 @@
+article_length=300
+article_per_day=1

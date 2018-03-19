@@ -1,0 +1,12 @@
+Options -Multiviews
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^([^\/]*)(.*) index.php?page=$1&param=$2 [QSA]
+</IfModule>

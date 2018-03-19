@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+
+td.actions
+{
+	width: 226px;
+}
+
+.table > tbody > tr > td.align-middle
+{
+    vertical-align: middle;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1)
+{
+	background: #eee;
+}
+
+.table-hover > tbody > tr:hover
+{
+	background: #d9edf7;
+}
+
+.table > tbody > tr > td
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#deleteProject p.bg-danger,
+p.add-padding
+{
+	padding: 10px;
+}
+
+p.vertical-padding
+{
+	padding: 25px 0;
+}
+
+div.margin-15
+{
+	margin-bottom: 15px;
+}
+
+#editArticle textarea
+{
+	resize: none;
+	height: 250px;
+}
+
+.article-index
+{
+	width: 3%;
+	font-weight: bold;
+}
+
+.no-chart
+{
+	height: 400px;
+	line-height: 400px;	
+}
+
+.grid-table
+{
+	padding: 0 30px;
+}
+
+.grid-table .table-header > div
+{
+	line-height: 42px;
+	border-bottom: 2px solid #999;
+	font-weight: bold;
+}
+
+.grid-table .table-body > div
+{
+	line-height: 32px;
+	padding: 5px;
+}
+
+.grid-table.table-striped .table-body:nth-of-type(odd)
+{
+	background-color:#f9f9f9;
+}
+
+.grid-table .table-body label
+{
+	display: block;
+	cursor: pointer;
+}
+
+.grid-table .table-body label:hover
+{
+	background-color:#eee;
+}
+
+#word-count-chart
+{
+	position: relative;
+}
+
+.loading-div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.9);
+	line-height: 400px;
+	width: 100%;
+	height: 100%;
+	text-align: center; 
+}
+
+.loading-div > div
+{
+	vertical-align: middle;
+}
+
+@media (max-width: 768px) 
+{
+	.grid-table.table-striped .table-body:nth-of-type(odd)
+	{
+		background-color: white;
+	}
+	
+	.grid-table.table-striped .table-body > div:nth-child(1),
+	.grid-table.table-striped .table-body > div:nth-child(2)
+	{
+		background-color:#f9f9f9;
+	}
+}
